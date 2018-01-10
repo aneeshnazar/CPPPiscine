@@ -32,7 +32,7 @@ void Phonebook::search()
     }
     for (int i = 0; i < it; ++i)
     {
-        std::cout << std::setw(10) << i;
+        std::cout << std::setw(10) << i + 1;
         data[i].output();
     }
     if (std::cin.eof())
@@ -41,12 +41,12 @@ void Phonebook::search()
     if (std::string(n) == "")
         return ;
     pick = atoi(n);
-    if (pick < it && pick >= 0) {
-        data[pick].outputAll();
+    if (pick <= it && pick > 0) {
+        data[pick - 1].outputAll();
     }
     else
     {
-        std::cout << "Invalid value, please enter a value between 0 and " << it - 1 << std::endl;
+        std::cout << "Invalid value, please enter a value between 1 and " << it << std::endl;
     }
 }
 
