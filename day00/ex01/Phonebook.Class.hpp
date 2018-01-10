@@ -6,14 +6,14 @@
 #include "Entry.Class.hpp"
 
 class Phonebook {
-private:
-    Entry   data[8];
-    int     it;
-public:
-    Phonebook ();
-    void add();
-    void search();
-    virtual ~Phonebook ();
+	private:
+		Entry   data[8];
+		int     it;
+	public:
+		Phonebook ();
+		void add();
+		void search();
+		~Phonebook ();
 };
 
 #endif
