@@ -3,7 +3,7 @@
 
 #include <string>
 #include <cstdlib>
-#include "entry.hpp"
+#include "Entry.Class.hpp"
 
 class Phonebook {
 private:
