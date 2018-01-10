@@ -4,13 +4,13 @@
 #include <iostream>
 
 class Pony {
-    private:
-        std::string name;
-    public:
-        Pony ();
-        Pony (std::string name);
-        void run();
-        virtual ~Pony ();
+	private:
+		std::string name;
+	public:
+		Pony ();
+		Pony (std::string name);
+		void run();
+		~Pony ();
 };
 
 #endif
