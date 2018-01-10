@@ -4,12 +4,12 @@
 #include <iostream>
 
 class Brain {
-private:
-    void *  me;
-public:
-    Brain ();
-    virtual ~Brain ();
-    std::string identify();
+	private:
+		void *  me;
+	public:
+		Brain ();
+		~Brain ();
+		std::string identify();
 };
 
 #endif

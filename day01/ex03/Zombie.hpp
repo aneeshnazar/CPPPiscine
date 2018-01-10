@@ -4,16 +4,16 @@
 #include <iostream>
 
 class Zombie {
-private:
-    std::string type;
-    std::string name;
-public:
-    Zombie ();
-    Zombie (std::string name, std::string type);
-    void setName(std::string name);
-    void setType(std::string type);
-    virtual ~Zombie (void);
-    void announce(void);
+	private:
+		std::string type;
+		std::string name;
+	public:
+		Zombie ();
+		Zombie (std::string name, std::string type);
+		void setName(std::string name);
+		void setType(std::string type);
+		~Zombie (void);
+		void announce(void);
 };
 
 #endif
